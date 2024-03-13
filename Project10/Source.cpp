@@ -20,7 +20,8 @@ int main() {
     myBitset.print();
     cout << "Приклад використання оператора []\nmyBitSet[1] = false\n";
     myBitset[1] = false;
-    cout << "Значення другу біту після використання оператора[] = ";
+    cout << "Значення другого біту після використання оператора[] = ";
     cout << boolalpha << myBitset[1];
+    Bitset other;
     return 0;
 }

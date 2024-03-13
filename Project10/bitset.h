@@ -39,15 +39,23 @@ public:
 
     bool test(int pos) const;
 
-    bool none();
+    bool none() const;
    
-    bool any();
+    bool any() const;
     
-    int count();
+    int count() const;
    
-    int size();
+    int size() const;
     
     BitProxy operator[](int pos);
     
+    Bitset operator|(const Bitset& other) const;
+
+    Bitset operator&(const Bitset& other) const;
+
+    Bitset operator^(const Bitset& other) const;
+    
+
     void print() const;
+   
 };
